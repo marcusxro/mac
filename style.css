@@ -1,0 +1,276 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: bisque;
+    
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px    ;
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+.menu {
+    font-size: 25px;
+    cursor: pointer;
+    display: none
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+    
+    
+    
+ 
+   
+}
+
+.col {
+    flex-basis: 40%;
+    position: relative;
+    margin-right: 50px;
+}
+.col h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.col h2 {
+    font-size: 70px;
+   
+    
+}
+
+.col p {
+    font-size: 20px;
+     text-align: justify;
+  text-justify: inter-word;
+    
+}
+
+span {
+    color: blue;
+}
+
+.button {
+    width: 170x;
+    border: 1px solid black;
+    padding: 15px 14px;
+    color: black;
+    font-size: 20px;
+    background: blue;
+    cursor: pointer;
+    transition-delay: .5s;
+    transition: .5s;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.button:hover {
+    color: black;
+    background: white;
+    width: 175;
+
+}
+.col::after {
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: blue;
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+
+
+
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    left: 20%;
+
+   display: flex;
+   align-items: center;
+ 
+}
+ .col-2 .mac {
+    width: 650px;
+   
+    
+}
+
+.mag {
+    position: absolute;
+    flex-basis: 60%;
+    top: 10%;
+    right: 180%;
+    z-index: -2;
+    display: flex;
+}
+
+.col-2:hover{
+    -webkit-filter: brightness(70%);
+    transition: .5s ease;
+    z-index: -1;
+
+}
+
+
+.mac {
+   height: 100%;
+   width: 100px;
+}
+
+
+
+.dot {
+  position: absolute;
+  right: 0;
+  top: 3;
+  z-index: -1;
+  
+   
+}
+.social{
+    text-align: center;
+  padding-top: 20px;
+  
+}
+
+@media ony screen and (max-width: 400px;){
+    nav ul li a{
+        font-size: 10px;
+        margin: 0;
+    }
+}
+.col2 .mac {
+    width: 300px;
+ }
+
+
+@media only screen and (max-width: 700px){
+    .body{
+        padding: 0;
+        margin: 0;
+        place-items: center;
+    }
+
+
+    .menu {
+        display: block
+    }
+    .col-2 {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+        font-size: 20px;
+
+    }
+    nav ul li a{
+        padding-right: -2%;
+        position:none; margin: 0 ; 
+       
+    }
+
+    .mac {
+      height: 20%;
+        
+    }
+
+    .col-1 {
+        flex-basis: 100%;
+    }
+    .col h1{
+        font-size: 33px;
+    }
+    .col h2 {
+        font-size:30px;
+        width: 100%;
+    }
+    .color {
+       float: right;
+       position: absolute;
+       right: 3%;
+       top: 3%;
+       color: white;
+        }
+
+    .col p {
+        font-size: 20px;
+        margin: 0;
+        
+    }
+
+    .row {
+        flex-direction: column-reverse;
+        margin: 0;
+        width: 300px;
+        
+    }
+    .mag{
+       position: absolute;
+       transform: translate(50%, 50%);
+       left: 3%;
+    }
+   
+    .dot {
+        position: absolute;
+        bottom: -30%;
+        left: -20%;
+      
+    }
+    .col2 .mac {
+       width: 300px;
+    }
+    .col {
+        flex-basis: 100%;
+    }
+
+   
+}
